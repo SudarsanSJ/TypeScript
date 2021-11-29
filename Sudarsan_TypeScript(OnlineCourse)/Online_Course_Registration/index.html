@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Online Course Registration</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="script/main.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <h1>Welcome For Online Course Registration</h1>
+            <button onclick="NewUser()">New User</button>
+            <button onclick="LogIn()">Log In</button>
+        </div>
+        <div id="newuser">
+            <h1>New User Registration</h1>
+            <br>
+            <label >Name</label>
+            <br><br>
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <br><br>
+            <label>Age</label>
+            <br> <br>
+            <input type="number" id="age" placeholder="Enter Your Age">
+            <br><br>
+            <label>Phone Number</label>
+            <br><br>
+            <input type="number" id="mobileno" placeholder="Enter Your Mobile Number">
+            <br><br>
+            <button onclick="Register()">Register</button>
+        </div>
+        <div id="login">
+            <h1>Welcome</h1>
+            <br>
+            <label >User Id</label><br><br>
+            <input type="text" id="userid" placeholder="Enter the UserID">
+            <br><br>
+            <button onclick="Validate()">Proceed</button>
+        </div>
+        <div id="course">
+            <div>
+            <h1>Select Your Option</h1>
+            <button onclick="Available()">Available Course</button>  
+            <button onclick="Enroll()">Enrolled Course</button><br><br>
+            <button onclick="Mainmenu()">Return</button>
+        <div id="available">
+            <h1>Available Courses</h1>
+            <select name="Courses" id="selection">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="C#">C#</option>
+                <option value="Java Script">Java Script</option>
+                <option value="Type Script">Type Script</option>
+            </select>
+            <button onclick="Courses()">Proceed</button>
+        </div>
+        <div id="enrolled">
+            <h1>Enrolled Course</h1><br><br>
+            <h3>History of Enrolled Course</h3>
+            <label id="labenroll"></label>
+            <br><br>
+            <label id="days"></label><br><br>
+            <button onclick="Return()">Return</button>
+            <button onclick="Navigate()">Available Course</button>
+        </div>
+    </body>
+</html>

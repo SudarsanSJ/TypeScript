@@ -1,0 +1,20 @@
+body{
+    margin: 10%;
+}
+button
+{
+    padding: 10px;
+    background-color: aquamarine;
+}
+label
+{
+    text-align: justify;
+}
+#main
+{
+    visibility: visible;
+}
+#newuser,#login,#course,#available,#enrolled
+{
+    visibility: hidden;
+}
